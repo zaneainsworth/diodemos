@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<resources>
-    <string name="app_name">DioDemos</string>
-    <string name="title_activity_main">DioDemos</string>
-    <string name="package_name">com.infordio.demos</string>
-    <string name="custom_url_scheme">com.infordio.demos</string>
-</resources>
