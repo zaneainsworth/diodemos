@@ -97,7 +97,7 @@ const isAfter = (time) => {
 .my-carousel,
 .my-carousel .v-carousel__items,
 .my-carousel .v-carousel__item {
-  height: 120px !important;
+  height: 200px !important;
   /* adjust to desired height */
 }
 
