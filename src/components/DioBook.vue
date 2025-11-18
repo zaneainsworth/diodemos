@@ -28,7 +28,7 @@
           <VRow class="mt-4">
             <VCol cols="12" md="8" class="mx-auto">
               <VVideo :volume="50" class="mx-auto" controls-variant="tube" density="comfortable" :image="diobook"
-                rounded="lg" :src="appdiobook1" track-color="green" fluid>
+                rounded="lg" :src="appdiobook1" track-color="green" hide-fullscreen hide-volume muted fluid>
               </VVideo>
             </VCol>
           </VRow>
