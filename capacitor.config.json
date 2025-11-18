@@ -1,0 +1,8 @@
+{
+  "appId": "com.infordio.demos",
+  "appName": "DioDemos",
+  "webDir": "dist",
+  "android": {
+    "minSdkVersion": 26
+  }
+}

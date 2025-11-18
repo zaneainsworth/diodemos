@@ -1,0 +1,32 @@
+{
+  "name": "client",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.4.4",
+    "@capacitor/app-launcher": "^7.0.2",
+    "@capacitor/cli": "^7.4.4",
+    "@capacitor/core": "^7.4.4",
+    "@capacitor/status-bar": "^7.0.3",
+    "@fontsource/poppins": "^5.2.7",
+    "@mdi/font": "^7.4.47",
+    "axios": "^1.13.2",
+    "cors": "^2.8.5",
+    "npm-check-updates": "^19.1.2",
+    "vite-plugin-pwa": "^1.1.0",
+    "vue": "^3.5.24",
+    "vue-router": "^4.6.3",
+    "vuetify": "^3.10.11"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.1",
+    "vite": "^7.2.2",
+    "vite-plugin-vue-devtools": "^8.0.3"
+  }
+}
