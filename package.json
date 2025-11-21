@@ -9,11 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@capacitor/android": "^7.4.4",
     "@capacitor/app-launcher": "^7.0.2",
     "@capacitor/cli": "^7.4.4",
-    "@capacitor/core": "^7.4.4",
-    "@capacitor/status-bar": "^7.0.3",
     "@fontsource/poppins": "^5.2.7",
     "@mdi/font": "^7.4.47",
     "axios": "^1.13.2",

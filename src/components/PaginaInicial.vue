@@ -50,13 +50,22 @@
         Parceiros
       </VCardTitle>
       <VCardItem>
-        <VCarousel class="my-carousel" :show-arrows="false" cycle hide-delimiters>
-          <VCarouselItem v-for="(item, i) in items" :key="i">
-            <div class="slide-inner">
-              <VImg :src="item.src" class="carousel-fixed-img" />
-            </div>
-          </VCarouselItem>
-        </VCarousel>
+        <div v-if="smAndDown">
+          <VCarousel class="my-carousel" :show-arrows="false" cycle hide-delimiters>
+            <VCarouselItem v-for="(item, i) in items" :key="i">
+              <div class="slide-inner">
+                <VImg :src="item.src" class="carousel-fixed-img" />
+              </div>
+            </VCarouselItem>
+          </VCarousel>
+        </div>
+
+        <div v-else class="d-flex justify-center align-center flex-row flex-nowrap">
+          <div v-for="(item, i) in items.slice(0, 8)" :key="i"
+            style="flex: 0 0 12.5%; max-width: 12.5%; padding: 8px; display:flex; justify-content:center;">
+            <VImg :src="item.src" class="carousel-fixed-img" />
+          </div>
+        </div>
       </VCardItem>
     </VCard>
 
@@ -64,6 +73,10 @@
 </template>
 
 <script setup>
+import { useDisplay } from 'vuetify';
+
+const { smAndDown } = useDisplay();
+
 const items = [
   { src: new URL('../assets/logos/bizdocs.png', import.meta.url).href },
   { src: new URL('../assets/logos/sage.png', import.meta.url).href },
@@ -97,7 +110,7 @@ const isAfter = (time) => {
 .my-carousel,
 .my-carousel .v-carousel__items,
 .my-carousel .v-carousel__item {
-  height: 200px !important;
+  height: 250px !important;
   /* adjust to desired height */
 }
 
