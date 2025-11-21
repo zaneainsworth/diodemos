@@ -51,10 +51,10 @@
       </VCardTitle>
       <VCardItem>
 
-        <div class="d-flex justify-center align-center flex-row flex-nowrap">
+        <div :class="smAndDown ? 'mb-6' : ''" class="d-flex justify-center align-center flex-row flex-nowrap">
           <div v-for="(item, i) in items.slice(0, 8)" :key="i"
             style="flex: 0 0 12.5%; max-width: 12.5%; padding: 8px; display:flex; justify-content:center;">
-            <VImg :src="item.src" class="carousel-fixed-img" />
+            <VImg :src="item.src" />
           </div>
         </div>
       </VCardItem>
@@ -95,48 +95,3 @@ const isAfter = (time) => {
   return new Date() > eventTime;
 };
 </script>
-
-<style scoped>
-/* fixed carousel height so surrounding text won't jump */
-.my-carousel,
-.my-carousel .v-carousel__items,
-.my-carousel .v-carousel__item {
-  height: 250px !important;
-  /* adjust to desired height */
-}
-
-/* center the content */
-.slide-inner {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: transparent;
-  /* optional */
-  padding: 8px;
-  /* optional breathing room */
-}
-
-/* Limit container area */
-.carousel-fixed-img {
-  max-width: 90%;
-  max-height: 90%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Target the REAL <img> inside VImg */
-.carousel-fixed-img img.v-img__img {
-  object-fit: contain !important;
-  /* never crop */
-  width: 100% !important;
-  height: 100% !important;
-
-  /* Fix extra-wide logos */
-  transform: scale(0.8);
-  transform-origin: center center;
-
-  object-position: center center !important;
-}
-</style>
