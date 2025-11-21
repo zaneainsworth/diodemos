@@ -1,5 +1,5 @@
 <template>
-  <VContainer class="w-100 px-0">
+  <VContainer class="w-100 h-screen px-0">
     <VCard elevation="0" class="text-center">
       <VCardTitle class="text-h5 font-weight-bold justify-center">
         Programa
