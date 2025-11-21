@@ -50,17 +50,8 @@
         Parceiros
       </VCardTitle>
       <VCardItem>
-        <div v-if="smAndDown">
-          <VCarousel class="my-carousel" :show-arrows="false" cycle hide-delimiters>
-            <VCarouselItem v-for="(item, i) in items" :key="i">
-              <div class="slide-inner">
-                <VImg :src="item.src" class="carousel-fixed-img" />
-              </div>
-            </VCarouselItem>
-          </VCarousel>
-        </div>
 
-        <div v-else class="d-flex justify-center align-center flex-row flex-nowrap">
+        <div class="d-flex justify-center align-center flex-row flex-nowrap">
           <div v-for="(item, i) in items.slice(0, 8)" :key="i"
             style="flex: 0 0 12.5%; max-width: 12.5%; padding: 8px; display:flex; justify-content:center;">
             <VImg :src="item.src" class="carousel-fixed-img" />
